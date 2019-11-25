@@ -1,13 +1,208 @@
 ﻿<!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Facturacion</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] Soporte Contable</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bulma/css/bulma.css" />
+    </environment>
+    <environment exclude="Development">
+      <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"
+            asp-fallback-href="~/lib/bulma/css/bulma.min.css"/>
+  </environment>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="~/css/admin.css" />
+
 </head>
 <body>
-    @RenderSection("Scripts", required: false)    
-</body>
+<!-- START NAV -->
+<nav class="navbar is-white">
+  <div class="container">
+      <div class="navbar-brand">
+          <a class="navbar-item brand-text" asp-controller="Home" asp-action="Index">
+            <img src="~/Img/Logo4.jpg"/>
+                Soportes Contables
+            </a>
+          <div class="navbar-burger burger" data-target="navMenu">
+              <span></span>
+              <span></span>
+              <span></span>
+          </div>
+      </div>
+      <div id="navMenu" class="navbar-menu">
+          <div class="navbar-start">
+                <a class="navbar-item" asp-controller="Home" asp-action="Index">
+                    Inicio
+                </a>
+                <a class="navbar-item" href="admin.html">
+                    Ventas
+                </a>
+                <a class="navbar-item" href="admin.html">
+                    Clientes
+                </a>
+          </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+					<input class="input" type="search" placeholder="Search receit...">
+				</div>
+				<div class="navbar-item">
+					<div class="field is-grouped">
+						<p class="control">
+							<a class="button is-small">
+								<span class="icon">
+									<i class="fa fa-user-plus"></i>
+								</span>
+								<span>
+									Register
+								</span>
+							</a>
+						</p>
+						<p class="control">
+							<a class="button is-small is-info is-outlined">
+								<span class="icon">
+									<i class="fa fa-user"></i>
+								</span>
+								<span>Login</span>
+							</a>
+						</p>
+					</div>
+				</div>
+			</div>
+      </div>
+  </div>
+</nav> 
+<!-- END NAV -->
+<div class="container">
+  <div class="columns">
+      <div class="column is-3 MenuI">
+          <aside class="menu is-hidden-mobile">
+              <hr class="menu-divider">
+              <p class="menu-label">
+                  General
+              </p>
+              <ul class="menu-list">
+                  <li><a asp-controller="Home" asp-action="Index" class="">Estadisticas</a></li>
+              </ul>
+              <hr class="dropdown-divider">
+              <p class="menu-label">
+                  Administración
+              </p>
+              
+                <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                    <span>Clientes</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                        Ver Clientes
+                    </a>
+                    <a asp-controller="Clientes" asp-action="Nuevo" class="dropdown-item">
+                        Agregar Cliente
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        Remover Cliente
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <br>
+                <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                    <span>Contador</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                        Ver Informacion
+                    </a>
+                    <a asp-controller="Contador" asp-action="Nuevo" class="dropdown-item">
+                        Agregar Contador
+                    </a>
+                    <a href="#" class="dropdown-item">
+                        Remover Contador
+                    </a>
+                    </div>
+                </div>
+                </div> 
+                <hr class="dropdown-divider">
+                <p class="menu-label">
+                  Soportes Contables
+              </p>
+                <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                    <span>Recibo de Caja</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                    </button>
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                    <a asp-controller="ReciboDeCaja" asp-action="Index" class="dropdown-item">
+                        Ver recibos
+                    </a>
+                    <a  asp-controller="ReciboDeCaja" asp-action="Nuevo" class="dropdown-item">
+                        Nuevo
+                    </a>
+                    </div>
+                </div>
+                </div>
+                <br>
+                <br>
+                <div class="dropdown is-hoverable">
+                <div class="dropdown-trigger">
+                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+                    <span>Consignación Bancaria</span>
+                    <span class="icon is-small">
+                        <i class="fas fa-angle-down" aria-hidden="true"></i>
+                    </span>
+                    </button>   
+                </div>
+                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+                    <div class="dropdown-content">
+                    <a href="#" class="dropdown-item">
+                        Consignar
+                    </a>
+                    </div>
+                </div>
+                </div>                      
+          </aside>
+      </div>
+      <div class="column is-9">
+          <nav class="breadcrumb" aria-label="breadcrumbs">
+              <ul>
+                  <li><a href="../">Inicio</a></li>
+                  <li class="is-active"><a href="#" aria-current="page">Estadisticas</a></li>
+              </ul>
+          </nav>
+          @RenderBody()
+      </div>
+  </div>
+</div>
+<footer id="footerBody" class="border-top">
+    <div class="container alignFoot">
+        &copy; 2019 Joe Hendrick & Yovani Hernández!
+    </div>
+</footer>
 
+<script src="~/js/bulma.js" asp-append-version="true"></script>
+
+  @RenderSection("Scripts", required: false)
+</body>
 </html>

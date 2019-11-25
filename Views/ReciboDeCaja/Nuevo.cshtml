@@ -1,0 +1,139 @@
+@{
+    ViewData["Title"] = "Recibo de Caja ";
+}
+<div class="columns">
+<div class="column is-2"></div>
+<div class="card column is-10">
+    <header class="card-header">
+        <p class="card-header-title">
+            Nuevo recibo de caja
+        </p>
+          <span class="icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </a>
+      </header>
+    <div class="card-content">
+        <div class="content">
+          <form asp-controller="ReciboDeCaja" asp-action="Crear" method="Post">
+          <div class="field is-horizontal ">
+            <div class="field-label is-normal">
+              <label class="label">Fecha de elaboracion</label>
+            </div>
+            <div class="field-body">
+              <div class="field">
+                <div class="control">
+                  <input type="date" class="input is-danger column is-4" >
+                </div>
+              </div>
+            </div>
+          </div>
+
+            <div class="field is-horizontal Space" >
+                <div class="field-label is-normal">
+                  <label class="label">Cliente</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input column is-8" type="text" placeholder="Nombre del Cliente">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+                <div class="field is-horizontal is-grouped is-grouped-multiline Space">
+                <div class="field-label">
+                  <label class="label">Tipo de pago</label>
+                </div>
+                <div class="field-body">
+                  <div class="field ">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="TipoDePago">
+                        Abonar a deuda (<i>Saldo a la fecha</i> <strong>$ 700000</strong>)
+                      </label>
+                    </div>
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="TipoDePago">
+                        Anticipo
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal Space">
+                <div class="field-label">
+                  <label class="label">Por la suma de</label>
+                </div>
+                <div class="field-body">
+                  <div class="field is-expanded">
+                    <div class="field has-addons">
+                      <p class="control">
+                        <a class="button is-static">
+                          $
+                        </a>
+                      </p>
+                      <p class="control is-expanded">
+                        <input type="number" class="input column is-4" placeholder="Valor recibido">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field is-horizontal Space">
+                <div class="field-label is-normal">
+                  <label class="label">Medio de Pago</label>
+                </div>
+                <div class="field-body">
+                  <div class="field is-narrow">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Efectivo</option>
+                          <option>Descontado Por Nomina</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field is-horizontal Space">
+                <div class="field-label is-normal">
+                  <label class="label">Observaciones</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <textarea class="textarea" placeholder="..."></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field is-horizontal Space">
+                <div class="field-label">
+                  <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <button type="submit" class="button is-primary">
+                        Generar recibo
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </form>
+        </div>
+    </div>
+</div>
+</div>

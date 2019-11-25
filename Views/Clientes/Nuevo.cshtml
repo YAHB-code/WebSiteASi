@@ -1,0 +1,125 @@
+@{
+    ViewData["Title"] = "Registro de Cliente ";
+}
+
+<div class="card">
+    <header class="card-header">
+        <p class="card-header-title">
+            Nuevo Cliente
+        </p>
+          <span class="icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </a>
+      </header>
+    <div class="card-content">
+        <div class="content">
+            <form asp-controller="Clientes" asp-action="Crear" method="Post">
+            <div class="field is-horizontal Space" >
+                <div class="field-label is-normal">
+                  <label class="label">Nombres</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input column is-7" type="text" placeholder="Nombres y apellidos del cliente">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field is-horizontal Space" >
+                <div class="field-label is-normal">
+                  <label class="label">Cédula</label>
+                </div>
+                <div class="field-body">
+                  <div class="field ">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input column is-6" type="text" placeholder="Cédula del cliente">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+               <div class="field is-horizontal Space" >
+                <div class="field-label is-normal">
+                  <label class="label">Dirección</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input" type="text" placeholder="Dirección del cliente">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+                <div class="field is-horizontal is-grouped is-grouped-multiline Space">
+                <div class="field-label">
+                  <label class="label">Sexo</label>
+                </div>
+                <div class="field-body">
+                  <div class="field ">
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="sexo">
+                        Masculino
+                      </label>
+                    </div>
+                    <div class="control">
+                      <label class="radio">
+                        <input type="radio" name="sexo">
+                        Femenino
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field is-horizontal Space">
+                <div class="field-label">
+                  <label class="label">Edad</label>
+                </div>
+                <div class="field-body">
+                  <div class="field is-expanded">
+                    <div class="field has-addons">
+                      <p class="control">
+                        <a class="button is-static">
+                          +15
+                        </a>
+                      </p>
+                      <p class="control is-expanded">
+                        <input type="number" class="input column is-2" placeholder="Edad">
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+              
+              <div class="field is-horizontal Space">
+                <div class="field-label">
+                  <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <button type="submit" class="button is-primary">
+                        Guardar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>

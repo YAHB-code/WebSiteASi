@@ -1,0 +1,104 @@
+@{
+    ViewData["Title"] = "Registro de Contador ";
+}
+
+<div class="columns">
+<div class="column is-2"></div>
+<div class="card column is-10">
+    <header class="card-header">
+        <p class="card-header-title">
+            Nuevo Contador
+        </p>
+          <span class="icon">
+          <i class="fa fa-angle-down" aria-hidden="true"></i>
+          </span>
+        </a>
+      </header>
+    <div class="card-content">
+        <div class="content">
+            <form asp-controller="Contador" asp-action="Crear" method="Post">
+            <div class="field is-horizontal Space" >
+                <div class="field-label is-normal">
+                  <label class="label">Nombres</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input column is-8" type="text" placeholder="Nombres y apellidos del contador">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field is-horizontal Space" >
+                <div class="field-label is-normal">
+                  <label class="label">Cédula</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input column is-6" type="text" placeholder="Cédula del contador">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+               <div class="field is-horizontal Space" >
+                <div class="field-label is-normal">
+                  <label class="label">Dirección</label>
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input" type="text" placeholder="Lugar de residencia">
+                      <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="field is-horizontal Space">
+                <div class="field-label is-normal">
+                  <label class="label">Sexo</label>
+                </div>
+                <div class="field-body">
+                  <div class="field is-narrow">
+                    <div class="control">
+                      <div class="select is-fullwidth">
+                        <select>
+                          <option>Masculino</option>
+                          <option>Femenino</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              
+              <div class="field is-horizontal Space">
+                <div class="field-label">
+                  <!-- Left empty for spacing -->
+                </div>
+                <div class="field-body">
+                  <div class="field">
+                    <div class="control">
+                      <button type="submit" class="button is-primary">
+                        Guardar
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
