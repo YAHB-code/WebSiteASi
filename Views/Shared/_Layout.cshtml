@@ -12,6 +12,10 @@
       <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css"
             asp-fallback-href="~/lib/bulma/css/bulma.min.css"/>
   </environment>
+      <environment exclude="Development">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css"
+            asp-fallback-href="~/lib/bulma/css/bulma.min.css"/>
+  </environment>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="~/css/admin.css" />
@@ -90,98 +94,55 @@
               <p class="menu-label">
                   Administración
               </p>
-              
-                <div class="dropdown is-hoverable">
-                <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                    <span>Clientes</span>
-                    <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                    </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                    <div class="dropdown-content">
-                    <a href="#" class="dropdown-item">
-                        Ver Clientes
-                    </a>
-                    <a asp-controller="Clientes" asp-action="Nuevo" class="dropdown-item">
-                        Agregar Cliente
-                    </a>
-                    <a href="#" class="dropdown-item">
-                        Remover Cliente
-                    </a>
-                    </div>
-                </div>
-                </div>
-                <br>
-                <br>
-                <div class="dropdown is-hoverable">
-                <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                    <span>Contador</span>
-                    <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                    </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                    <div class="dropdown-content">
-                    <a href="#" class="dropdown-item">
-                        Ver Informacion
-                    </a>
-                    <a asp-controller="Contador" asp-action="Nuevo" class="dropdown-item">
-                        Agregar Contador
-                    </a>
-                    <a href="#" class="dropdown-item">
-                        Remover Contador
-                    </a>
-                    </div>
-                </div>
-                </div> 
+                    <ul class="menu-list">
+                        <li>
+                            <a>Gestión de clientes
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul>
+                                <li><a>Ver listado</a></li>
+                                <li><a asp-controller="Clientes" asp-action="Nuevo">Agregar a cliente</a></li>
+                                <li><a>Remover un cliente</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-list">
+                        <li>
+                            <a>Gestión de Contador
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul>
+                                <li><a>Ver listado</a></li>
+                                <li><a asp-controller="Contador" asp-action="Nuevo">Agregar contador</a></li>
+                                <li><a>Remover contador</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 <hr class="dropdown-divider">
                 <p class="menu-label">
                   Soportes Contables
               </p>
-                <div class="dropdown is-hoverable">
-                <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                    <span>Recibo de Caja</span>
-                    <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                    </button>
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                    <div class="dropdown-content">
-                    <a asp-controller="ReciboDeCaja" asp-action="Index" class="dropdown-item">
-                        Ver recibos
-                    </a>
-                    <a  asp-controller="ReciboDeCaja" asp-action="Nuevo" class="dropdown-item">
-                        Nuevo
-                    </a>
-                    </div>
-                </div>
-                </div>
-                <br>
-                <br>
-                <div class="dropdown is-hoverable">
-                <div class="dropdown-trigger">
-                    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
-                    <span>Consignación Bancaria</span>
-                    <span class="icon is-small">
-                        <i class="fas fa-angle-down" aria-hidden="true"></i>
-                    </span>
-                    </button>   
-                </div>
-                <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                    <div class="dropdown-content">
-                    <a href="#" class="dropdown-item">
-                        Consignar
-                    </a>
-                    </div>
-                </div>
-                </div>                      
+                    <ul class="menu-list">
+                        <li>
+                            <a>Recibo de caja
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul>
+                                <li><a asp-controller="ReciboDeCaja" asp-action="Index">Ver recibos</a></li>
+                                <li><a asp-controller="ReciboDeCaja" asp-action="Nuevo">Nuevo</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="menu-list">
+                        <li>
+                            <a>Consignación bancaria
+                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            </a>
+                            <ul>
+                                <li><a asp-controller="ReciboDeCaja" asp-action="Index">Consignar</a></li>
+                            </ul>
+                        </li>
+                    </ul>                 
           </aside>
       </div>
       <div class="column is-9">
@@ -202,6 +163,7 @@
 </footer>
 
 <script src="~/js/bulma.js" asp-append-version="true"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
   @RenderSection("Scripts", required: false)
 </body>

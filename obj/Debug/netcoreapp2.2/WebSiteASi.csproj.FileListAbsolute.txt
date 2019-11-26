@@ -29,7 +29,6 @@ c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2
 c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\WebSiteASi.dll
 c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\WebSiteASi.pdb
 C:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\WebSiteASi.csproj.CopyComplete
-c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
 c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\ReciboDeCaja\Nuevo.cshtml.g.cs
 c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\Clientes\Nuevo.cshtml.g.cs
 c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\Contador\Nuevo.cshtml.g.cs
