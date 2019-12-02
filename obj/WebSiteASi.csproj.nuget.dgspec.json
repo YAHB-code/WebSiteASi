@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\WebSiteASi.csproj": {}
+    "C:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\WebSiteASi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\WebSiteASi.csproj": {
+    "C:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\WebSiteASi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\WebSiteASi.csproj",
+        "projectUniqueName": "C:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\WebSiteASi.csproj",
         "projectName": "WebSiteASi",
-        "projectPath": "C:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\WebSiteASi.csproj",
-        "packagesPath": "C:\\Users\\Joe Hendrick\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\obj\\",
+        "projectPath": "C:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\WebSiteASi.csproj",
+        "packagesPath": "C:\\Users\\Yovani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Joe Hendrick\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Yovani\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp2.2"
