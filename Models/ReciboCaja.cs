@@ -5,7 +5,7 @@ namespace WebSiteASi.Models
 {
     public class ReciboCaja
     {
-        public int ReciboCajaId{get;set;}
+        public int Id{get;set;}
         //llave foranea
         public int Cuenta_ClienteId{get;set;}
         //LLLAVE FORANEA
