@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\WebSiteASi.csproj",
+  "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\WebSiteASi.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -2961,63 +2961,103 @@
   "RootNamespace": "WebSiteASi",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Home\\Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Clientes\\Nuevo.cshtml",
-      "TargetPath": "Views\\Clientes\\Nuevo.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\ReciboDeCaja\\Nuevo.cshtml",
-      "TargetPath": "Views\\ReciboDeCaja\\Nuevo.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Shared\\_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Contador\\Nuevo.cshtml",
-      "TargetPath": "Views\\Contador\\Nuevo.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\ReciboDeCaja\\Index.cshtml",
-      "TargetPath": "Views\\ReciboDeCaja\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Home\\Privacy.cshtml",
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\_ViewImports.cshtml",
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\Yovani\\Documents\\GitHub\\WebSiteASi\\Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Shared\\_LoginPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_LoginPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\ReciboDeCaja\\Index.cshtml",
+      "TargetPath": "Views\\ReciboDeCaja\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\ReciboDeCaja\\Nuevo.cshtml",
+      "TargetPath": "Views\\ReciboDeCaja\\Nuevo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Contador\\Nuevo.cshtml",
+      "TargetPath": "Views\\Contador\\Nuevo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Shared\\Error.cshtml",
+      "TargetPath": "Views\\Shared\\Error.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "TargetPath": "Areas\\Identity\\Pages\\Account\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Shared\\_CookieConsentPartial.cshtml",
       "TargetPath": "Views\\Shared\\_CookieConsentPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Joe Hendrick\\Documents\\SoporteContable\\WebSiteASi\\Views\\Clientes\\Nuevo.cshtml",
+      "TargetPath": "Views\\Clientes\\Nuevo.cshtml",
       "FileKind": "mvc"
     }
   ],
