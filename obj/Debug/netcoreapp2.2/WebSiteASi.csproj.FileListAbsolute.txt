@@ -35,3 +35,8 @@ C:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2
 C:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.g.cshtml.cs
 C:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewStart.g.cshtml.cs
 C:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LoginPartial.g.cshtml.cs
+c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Login.g.cshtml.cs
+c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Logout.g.cshtml.cs
+c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\Register.g.cshtml.cs
+c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\Account\_ViewImports.g.cshtml.cs
+c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Areas\Identity\Pages\_ViewImports.g.cshtml.cs
