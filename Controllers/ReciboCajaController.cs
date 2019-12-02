@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace WebSiteASi
 {
-    public class ReciboDeCajaController : Controller
+    public class ReciboCajaController : Controller
     {
         public IActionResult Index()
         {
