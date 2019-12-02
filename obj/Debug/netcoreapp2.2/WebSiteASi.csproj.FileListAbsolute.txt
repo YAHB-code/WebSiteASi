@@ -33,3 +33,4 @@ c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2
 c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\Clientes\Nuevo.cshtml.g.cs
 c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\Contador\Nuevo.cshtml.g.cs
 C:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\ReciboDeCaja\Index.cshtml.g.cs
+c:\Users\Joe Hendrick\Documents\SoporteContable\WebSiteASi\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
